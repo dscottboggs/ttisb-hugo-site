@@ -1,0 +1,106 @@
+baseURL: https://test.thetruthissoboring.org/
+languageCode: en-US
+title: The Truth Is So Boring podcast
+
+theme: castanet
+paginate: 15
+buildFuture: true
+
+taxonomies:
+  category: categories
+  series: series
+  tags: tags
+
+permalinks:
+  about: /:filename/
+  episode: /:filename/
+
+menu:
+  main:
+    - name: About
+      identifier: about
+      url: /about
+    - name: Hosts
+      identifier: hosts
+      url: /host
+    # - name: Guests
+    #   identifier: guests
+    #   url: /guest
+    # - name: Upcoming Episodes
+    #   identifier: upcoming
+    #   url: /upcoming
+    # - name: Blog
+    #   identifier: blog
+    #   url: /blog
+    - name: Contact Us
+      identifier: contact
+      url: /contact
+
+params:
+  mainSections: [ episode ]
+  # episode_number_prefix: CWC
+  site_theme: blue # can be orange, blue, or grey
+  # site_layout: grid
+  site_layout: row
+  show_next_upcoming: true
+  enable_jumbo: true
+  # enable_jumbo: false
+  # truncate: 100
+  about_logo: /img/about-logo.jpg
+  copyright_notice: Copyright 2021 D. Scott Boggs
+
+  # TODO services
+  # itunes_subscribe: https://podcasts.apple.com/us/podcast/arrested-devops/id773888088?ign-mpt=uo%3D4&mt=2
+  # android_subscribe: http://subscribeonandroid.com/feeds.podtrac.com/VGAulpN7MY1U
+  # spotify_subscribe: https://open.spotify.com/show/...
+  # google_play_subscribe: https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuYXJyZXN0ZWRkZXZvcHMuY29tL2VwaXNvZGUvaW5kZXgueG1s
+  # stitcher_subscribe: http://www.stitcher.com/podcast/arrested-devops-2/arrested-devops
+  # soundcloud_subscribe: http://feeds.soundcloud.com/users/soundcloud:users:203144248/sounds.rss
+  # pocketcasts_subscribe: http://pcasts.in/feed/feeds.soundcloud.com/users/soundcloud:users:203144248/sounds.rss
+  # mailchimp_subscribe: //arresteddevops.us3.list-manage.com/subscribe/post?u=5e4cbcac996bb9df25f970a89&amp;id=154fa76bcc
+  # rss_subscribe: http://feed.com/myfeed #only set this if you don't want to use the built-in feed
+  description: The bi-weekly radio program and podcast broadcast live every other Thursday from the Catskills Mountains region of New York on WIOX 91.3FM. We cover recent events, after stories have had time to mature, and try to include as much historical context as possible.
+  # media_prefix: https://media.blubrry.com/arresteddevops/content.blubrry.com/arresteddevops/
+  # disqusShortname: 
+
+  feed:
+    copyright: Copyright 2021 D. Scott Boggs
+    itunes_subtitle: The Truth Is So Boring podcast
+    itunes_author: Owen Faison-Menzel and D. Scott Boggs
+    itunes_summary: The bi-weekly radio program and podcast broadcast live every other Thursday from the Catskills Mountains region of New York on WIOX 91.3FM. We cover recent events, after stories have had time to mature, and try to include as much historical context as possible.
+    itunes_owner_name: D. Scott Boggs
+    itunes_owner_email: scott@tams.tech
+    itunes_image: https://dnltc.tams.tech/img/episode/default.jpg
+    itunes_top_category: News
+    itunes_first_sub_category: Politics
+    itunes_second_sub_category:
+    explicit: no
+    language: en-us
+
+  social:
+    twitter: catamountcommie
+    twitter_domain: thetruthissoboring.org
+  
+  authors:
+    Owen:
+      name: Owen Faison-Menzel
+      thumbnail: img/host/owen.jpg
+      bio: TODO
+      social:
+        twitter: catamount_commie
+        twitter_domain: thetruthissoboring.org
+    Scott:
+      name: D. Scott Boggs
+      thumbnail: img/host/scott.jpg
+      bio: TODO
+      social:
+        twitter: dscottboggs
+        twitter_domain: thetruthissoboring.org
+  
+  links:
+    dnltc:
+      name: Do Not Learn To Code podcast
+      url: https://donotlearntocode.org/
+    pix:
+      name: Scott's Photoblog
+      url: https://photos.tams.tech/
